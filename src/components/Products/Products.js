@@ -13,7 +13,7 @@ const Products = () => {
   return (
     <div>
       <h1>Products Load: {products.length}</h1>
-      <div>
+      <div className="d-flex flex-wrap justify-content-between">
         {products.map((product) => (
           <Product product={product} key={product.id}></Product>
         ))}
